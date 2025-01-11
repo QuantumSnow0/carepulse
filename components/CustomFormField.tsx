@@ -10,7 +10,6 @@ import {
 import { Input } from "./ui/input";
 import { Control } from "react-hook-form";
 import { FormFieldType } from "./forms/PatientForm";
-import { Label } from "@radix-ui/react-label";
 import Image from "next/image";
 import "react-phone-number-input/style.css";
 import PhoneInput from "react-phone-number-input";
