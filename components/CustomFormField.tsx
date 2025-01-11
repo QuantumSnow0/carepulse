@@ -1,9 +1,7 @@
 "use client";
 import React from "react";
 import {
-  Form,
   FormControl,
-  FormDescription,
   FormField,
   FormItem,
   FormLabel,
@@ -62,7 +60,7 @@ const RenderField = ({ field, props }: { field: any; props: CustomProps }) => {
             placeholder={placeholder}
             international
             withCountryCallingCode
-            value={field.value as E164Number | undefined}
+            value={field.value as undefined}
             onChange={(value) => field.onChange(value)}
             className="input-phone"
           />
