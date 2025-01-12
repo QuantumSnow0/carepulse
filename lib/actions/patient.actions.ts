@@ -19,8 +19,15 @@ export const createUser = async (user: CreateUserParams) => {
       const documents = await users.list([Query.equal("email", [user.email])]);
       return documents?.users[0];
     } else {
-      console.log(ENDPOINT);
       console.log(error);
     }
+  }
+};
+export const getUser = async (userId: string) => {
+  try {
+    const user = await users.get(userId);
+    return parseStringify(user);
+  } catch (error) {
+    console.log(error);
   }
 };
